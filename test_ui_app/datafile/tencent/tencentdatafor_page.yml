@@ -1,0 +1,11 @@
+home_page:
+  go_to_mypage:
+      by: xpath
+      locator: "//*[@content-desc='我的']"
+      action: click
+
+my_page:
+  go_to_download:
+    - by: xpath
+      locator: "//*[@text='下载管理']"
+      action: click

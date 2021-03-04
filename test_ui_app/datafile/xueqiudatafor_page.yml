@@ -1,0 +1,63 @@
+HomePage:
+  gotoHangqing:
+    note:
+    by: xpath
+    locator: "//*[@content-desc='我的']"
+    action: click
+    later:
+  findMarkect0:
+    note: 点击首页输入框
+    by: xpath
+    locator: "//*[@resource-id='com.xueqiu.android:id/tv_search']"
+    action: click
+    later: 2
+  findMarkect1:
+    note: 在搜索页面输入信息
+    by: xpath
+    locator: "//*[@resource-id='com.xueqiu.android:id/search_input_text']"
+    action: send_keys
+    later: 2
+  findMarkect2:
+    note: 再次点击上述输入框使弹出
+    by: xpath
+    locator: "//*[@resource-id='com.xueqiu.android:id/search_input_text']"
+    action: click
+    later: 1
+    do:
+  findMarkect3:
+    note: 点击搜索弹出的内容
+    by: xpath
+    locator: "//*[@resource-id='com.xueqiu.android:id/listview']/android.widget.RelativeLayout"
+    action: click
+    later: 2
+  findMarkect4:
+    note: 在进入的综合页面，点击目标（第一个）
+    by: xpath
+    locator: "//*[@resource-id='com.xueqiu.android:id/ll_stock_item_container']/android.widget.FrameLayout"
+    action: click
+    later: 2
+  findMarkect5:
+    note:
+    by: xpath
+    locator: "//*[@resource-id='com.xueqiu.android:id/icon']"
+    action: click
+    later:
+MarketDetailPage:
+  getmarketid:
+    note: 找到market id
+    by: xpath
+    locator: "//*[@resource-id='com.xueqiu.android:id/title_bar_symbol']"
+    action: gettext
+    later:
+  intomarkectdetaildata:
+    note: 点击数据面板进去行情数据详情
+    by: xpath
+    locator: "//*[@resource-id='com.xueqiu.android:id/stock_info_layout_wrapper']"
+    action: click
+    later: 2
+  getmarkectdetailtaital:
+    note: 检查数据标题
+    by: xpath
+    locator: "//*[@resource-id='com.xueqiu.android:id/title']"
+    action: gettext
+    later: 2
