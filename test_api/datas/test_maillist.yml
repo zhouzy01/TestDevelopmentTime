@@ -1,0 +1,14 @@
+test_creatmemberagen:
+  userid: user00020
+  mobile: 15500000020
+test_creatmember:
+  userid: user00020
+  mobile: 15500000020
+test_readmember:
+  userid: user00019
+test_readmember1:
+  userid: user00019
+test_readmember2:
+  userid: user00019
+test_readmember3:
+  userid: user00019

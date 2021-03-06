@@ -1,0 +1,13 @@
+creatmember:
+  method: post
+  url: "https://qyapi.weixin.qq.com/cgi-bin/user/create?access_token=+{token}"
+  json:
+    userid: +{userid}
+    mobile: +{mobile}
+    name: zhangsan
+    department: [1, 2]
+readmember:
+  method: post
+  url: "https://qyapi.weixin.qq.com/cgi-bin/user/create?access_token=+{token}"
+  params:
+    userid: +{userid}
